@@ -1,0 +1,83 @@
+.vaccine {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500px;
+    /* display: inline-block; */
+    /* font-size: 16px; */
+    transition-duration: 0.1s;
+    width: 150px;
+}
+
+.vaccine:hover {
+    background-color: #b8ff76;
+    color: #11003f;
+}
+
+
+.vaccine span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.1s;
+}
+
+.vaccine span:after {
+    content: '\00bb\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.vaccine:hover span {
+    padding-right: 25px;
+}
+
+.vaccine:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.system {
+    background-color: #ae00ff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500px;
+    display: inline-block;
+    transition-duration: 0.1s;
+    width: 100%;
+    border-bottom:2px solid violet;
+}
+
+.system span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.1s;
+}
+
+.system span:after {
+    content: '\00AB\00AB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.system:hover span {
+    padding-left: 25px;
+}
+
+.system:hover span:after {
+    opacity: 1;
+    left: 0;
+}
